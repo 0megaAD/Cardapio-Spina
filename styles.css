@@ -3,12 +3,11 @@ body {
     margin: 0;
     padding: 20px;
     color: #333;
-    background-color: #f4f4f9;
-    background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg');
+    background-image: url('TortadeFrangoMilho.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: changeBackground 15s infinite;
+    animation: slideBackground 30s linear infinite;
 }
 
 .menu-container {
@@ -141,18 +140,11 @@ body {
     color: #004904;
 }
 
-
-@keyframes fadeBackground {
+@keyframes slideBackground {
     0% {
-        background-image: url('TortadeFrangoMilho.jpg');
-        opacity: 1;
-    }
-    50% {
-        background-image: url('quiche2.jpg');
-        opacity: 0;
+        background-position: 0% 0%;
     }
     100% {
-        background-image: url('TortadeFrangoMilho.jpg');
-        opacity: 1;
+        background-position: 100% 100%;
     }
 }
