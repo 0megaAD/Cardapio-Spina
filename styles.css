@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 20px;
     color: #333;
-    background-color: #f4f4f9; /* Cor de fundo */
-    background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg'); /* Imagens de fundo */
+    background-color: #f4f4f9; 
+    background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: changeBackground 15s infinite; /* Aplica a animação de troca de imagens */
+    animation: changeBackground 15s infinite; 
+}
 
 .menu-container {
     max-width: 800px;
