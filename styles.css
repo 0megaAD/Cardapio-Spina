@@ -5,9 +5,18 @@ body {
     color: #333;
     background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg'), url('nhoque.jpeg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: fixed;
-    animation: slideBackground 30s linear infinite;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
 .menu-container {
@@ -138,19 +147,4 @@ body {
 .footer-info .contact-item span {
     font-size: 1.2em;
     color: #004904;
-}
-
-@keyframes slideBackground {
-    0% {
-        background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg'), url('nhoque.jpeg');
-        background-position: 0% 0%;
-    }
-    50% {
-        background-image: url('quiche2.jpg'), url('nhoque.jpeg'), url('TortadeFrangoMilho.jpg');
-        background-position: 100% 0%;
-    }
-    100% {
-        background-image: url('nhoque.jpeg'), url('TortadeFrangoMilho.jpg'), url('quiche2.jpg');
-        background-position: 0% 100%;
-    }
 }
