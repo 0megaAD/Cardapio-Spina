@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     color: #333;
-    background-image: url('TortadeFrangoMilho.jpg');
+    background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg'), url('nhoque.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -142,9 +142,15 @@ body {
 
 @keyframes slideBackground {
     0% {
+        background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg'), url('nhoque.jpeg');
         background-position: 0% 0%;
     }
+    50% {
+        background-image: url('quiche2.jpg'), url('nhoque.jpeg'), url('TortadeFrangoMilho.jpg');
+        background-position: 100% 0%;
+    }
     100% {
-        background-position: 100% 100%;
+        background-image: url('nhoque.jpeg'), url('TortadeFrangoMilho.jpg'), url('quiche2.jpg');
+        background-position: 0% 100%;
     }
 }
