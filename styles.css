@@ -1,10 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
     margin: 0;
     padding: 20px;
     color: #333;
-}
+    background-color: #f4f4f9; /* Cor de fundo */
+    background-image: url('TortadeFrangoMilho.jpg'), url('quiche2.jpg'), url('nhoque.jpeg'); /* Imagens de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: changeBackground 15s infinite; /* Aplica a animação de troca de imagens */
 
 .menu-container {
     max-width: 800px;
@@ -202,14 +206,14 @@ body {
 
 .footer-info p {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #00490c;
 }
 
 .footer-info .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .footer-info .contact-item i {
@@ -222,3 +226,4 @@ body {
     font-size: 1.2em;
     color: #004904;
 }
+
