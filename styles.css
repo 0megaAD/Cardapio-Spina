@@ -126,25 +126,20 @@ body {
     margin-bottom: 15px;
 }
 
-.footer-info p {
-    margin: 10px 0;
-    font-size: 1.5em;
-    color: #00490c;
-}
-
-.footer-info .contact-item {
+.contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
-.footer-info .contact-item i {
+.contact-item i {
     font-size: 1.5em;
     color: #0f5800;
-    margin-right: 10px;
 }
 
-.footer-info .contact-item span {
-    font-size: 1.2em;
+.contact-item span {
     color: #004904;
 }
