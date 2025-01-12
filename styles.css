@@ -143,3 +143,120 @@ body {
 .contact-item span {
     color: #004904;
 }
+
+.promotion-section {
+    background-color: #fffbcc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.promotion-section:hover {
+    transform: scale(1.02);
+}
+
+.promotion-section h2 {
+    color: #d48800;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.promotion-item {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.promotion-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #d48800;
+}
+
+.promotion-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.promotion-price {
+    color: #d48800;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-form input, .order-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.order-form button {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.order-form button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-height: 120px; /* Ajuste a altura conforme necessário */
+    resize: vertical; /* Permite redimensionamento apenas na vertical */
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+/* Formulário escondido inicialmente */
+#formularioPedido {
+    display: none;
+}
